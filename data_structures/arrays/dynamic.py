@@ -9,21 +9,22 @@ class DynamicArray:
         self.array = [0] * self.size
 
     
-    def resize_array(self) -> Any:
+    def resize_array(self) -> list[Any]:
         if self.length == self.size:
-            self.array = self.array + [0] * self.length
-            self.size = self.length + self.size - 1
+            self.size *= 2
+            new_array = [0] * self.size 
+            for i in range(self.length):
+                new_array[i] = self.array[i]
+            self.array = new_array
         return self.array
     
     def insert(self, idx: int,val: Any) -> None:
-        self.array = self.resize_array()
-        temp = self.array[idx]
-        self.array[idx] = val
-        while idx < self.size - 1:
-            next_val = self.array[idx + 1]
-            self.array[idx + 1] = temp
-            temp = next_val
-            idx += 1
+        if idx < 0 or idx > self.length:
+            return "Index out of bound"
+        self.resize_array()
+        for i in range(self.length, idx, -1):
+            self.array[i] = self.array[i-1]
+        self.array[idx] = val 
         self.length += 1
 
 
@@ -33,27 +34,36 @@ class DynamicArray:
         self.length += 1
 
     def delete(self, idx: int) -> None:
-        while idx < self.size:
-            next_val = self.array[idx + 1]
-            self.array[idx] = next_val
-            idx += 1
+        if idx < 0 or idx > self.length:
+            return "Index out of bound"
+        for i in range(idx, self.length, -1):
+            self.array[i] = self.array[i+1]
+        self.array[self.length-1] = 0
+        self.length -= 1
         
 
     def update(self, idx: int, val: int|float) -> None:
+        if idx < 0 or idx > self.length:
+            return "Index out of bound"
         self.array[idx] = val
 
-    def read(self, idx: int):
-        return self.array[idx]
+    def read(self, idx: int) -> Any:
+        if idx < self.length:
+            return self.array[idx]
+    
 
-    def search(self, idx) -> bool:
-        for i in range(self.length):
-            if self.read(i) == self.read(idx):
+    def search(self, val: int) -> bool:
+        i = 0
+        while i < self.length:
+            if self.read(i) == val:
                 print(self.read(i))
                 return True
-            return False
+            i += 1
+        return False
+
 
     def __repr__(self) -> str:
-        return str(self.array)
+        return str(self.array[:self.length])
 
 
 
@@ -70,6 +80,7 @@ dynamic_array.insert(8, 30)
 dynamic_array.insert(9, 780)
 dynamic_array.insert(10, 89)
 dynamic_array.delete(0)
-dynamic_array.insert(11, 600)
+dynamic_array.insert(10, 780)
 print(dynamic_array.read(7))
 print(dynamic_array)
+print(dynamic_array.search(56))
