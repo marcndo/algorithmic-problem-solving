@@ -16,7 +16,7 @@ class DoublyLinkedList:
 
     def insert(self, idx, element):
         if idx > self.size or idx < 0:
-            print(f"You must insert between 0 to {self.size}")
+            print(f"You must insert between 0 to {self.size -1}")
             return 
         current = self.head
         i = 0
@@ -32,29 +32,29 @@ class DoublyLinkedList:
         self.size += 1
 
     def add(self, element):
-        i = 0
         new_node = Node(element)
-        current = self.head
-        while current is not None and i < self.size:
-            current = current.next
-            i += 1
-        current.next = new_node
+        last = self.tail.prev
+
+        new_node.prev = last
         new_node.next = self.tail
+
+        last.next = new_node
+        self.tail.prev = new_node
         self.size += 1
-        
 
     def delete(self, idx):
         if idx > self.size or idx < 0:
             print(f"You must insert between 0 to {self.size}")
             return
-        current = self.head
-        i = 1
+        current = self.head.next #first real node
+        i = 0
         while i < idx:
             current = current.next
             i += 1
-        print(i)
-        current.prev = current.next.next
-        current.next = current.prev
+        prev_node = current.prev
+        next_node = current.next
+        prev_node.next = next_node
+        next_node.prev = prev_node
         self.size -= 1
 
 
