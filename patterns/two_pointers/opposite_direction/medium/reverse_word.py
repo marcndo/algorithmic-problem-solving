@@ -11,6 +11,4 @@ def reverse_word(s):
     return " ".join(s)
 
 
-s = "         them  sky is         blue"
-print(reverse_word(s))
 

@@ -8,6 +8,3 @@ def remove_duplicates(nums):
             slow += 1
     return slow
 
-
-print(remove_duplicates([1, 1, 1, 2]))
-

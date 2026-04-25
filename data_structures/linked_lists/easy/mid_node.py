@@ -1,10 +1,13 @@
-"https://leetcode.com/problems/middle-of-the-linked-list/description/"
+"876. Middle of the Linked List"
 
-def mid_node(head):
-    current = head.next
-    while current:
-        current = current.next
-        next_node = current
+def middle_node(head):
+    slow = head
+    fast = head
+    while fast and fast.next:
+        slow = slow.next
+        fast = fast.next.next
+    return slow
+
 
 
 
