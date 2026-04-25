@@ -14,4 +14,3 @@ def reverse_bit(n):
         result += int(bin_repr[i]) * 2 ** (length - (i+1))
     return result
 
-print(reverse_bit(10))

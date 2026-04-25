@@ -16,6 +16,4 @@ def reverse_vowels(s):
         right -= 1
     return "".join(s)
 
-s = "IceCreAm"
-s = "leetcode"
-print(reverse_vowels(s))
+

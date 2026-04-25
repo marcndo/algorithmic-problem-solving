@@ -12,6 +12,6 @@ def reverse_word(s):
             j -= 1
         result = result + " " + "".join(word)
     return result
-s = "Let's take LeetCode contest"
+
 s = "Mr Ding"
 print(reverse_word(s))
