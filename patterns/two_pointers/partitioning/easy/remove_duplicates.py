@@ -1,10 +1,14 @@
 "Leetcode 26: Remove duplicates"
 
 def remove_duplicates(nums):
-    slow = 1
+    j = 1
     for i in range(1,len(nums)):
-        if nums[slow - 1] != nums[i] and nums[slow] != nums[i]:
-            nums[slow] = nums[i]
-            slow += 1
-    return slow
+        if nums[j-1] != nums[i]:
+            nums[j] = nums[i]
+            j += 1
+    return j
+  
+
+nums = [1,1,1,2,2,3]
+print(remove_duplicates(nums))
 
