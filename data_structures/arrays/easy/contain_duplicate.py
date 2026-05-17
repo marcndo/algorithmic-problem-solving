@@ -10,5 +10,5 @@ def contain_duplicate(arr: list[int]) -> bool:
     return False
 
 def contain_duplicates2(nums: list[int]) -> bool:
-    return len(set(nums)) == len(nums)
+    return len(set(nums)) !== len(nums)
 
