@@ -13,7 +13,7 @@ def evalRPN(tokens):
             elif ch == "*":
                 stack.append(a * b)
             else:
-                stack.append(a/b)
+                stack.append(int(b / a))
         else:
             stack.append(int(ch))
     return stack[-1]
