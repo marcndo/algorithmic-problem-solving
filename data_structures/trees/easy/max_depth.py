@@ -1,8 +1,7 @@
 def max_depth(root):
-    def dfs(node):
-        if not node:
+        if not root:
             return 0
-        left = dfs(node.left)
-        right = dfs(node.right)
+        left = dfs(root.left)
+        right = dfs(root.right)
         return 1 + max(left, right)
-    return dfs(root)
+    
