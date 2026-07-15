@@ -1,152 +1,72 @@
-# 📘 Data Structures & Algorithms Practice
+# Data Structures & Algorithms Practice
+This repository documents my journey toward becoming a software engineer(Machine Learning) capable of solving unfamiliar algorithmic problems through reasoning rather than memorization.
 
 ## 🎯 Objective
 
-This repository contains my structured practice of Data Structures and Algorithms (DSA) aimed at:
+* Learn algorithms from first principles
 
-* Strengthening problem-solving skills
-* Preparing for technical interviews
-* Mastering core algorithmic patterns
-* Building strong algorithmic thinking
+* Prove algorithm correctness
 
----
+* Analyze complexity
 
-## 🧠 Topics Covered
+* Write clean implementations
 
-### 🟢 Core Data Structures
+* Build interview-level problem-solving ability
 
-* Arrays
-* Strings
-* Hash Tables
-* Linked Lists
-* Stacks & Queues
-* Trees (Binary Trees, BST)
-* Graphs
+* Contribute to open source
 
 ---
 
-### 🔵 Algorithmic Patterns
+## Learning Philosophy
+Every problem follows the same reasoning framework.
 
-* Two Pointers
-* Sliding Window
-* Binary Search
-* Recursion & Backtracking
-* Depth-First Search (DFS)
-* Breadth-First Search (BFS)
-* Dynamic Programming (DP)
-* Greedy Algorithms
-* Divide & Conquer
+## Repository Structure
+
+docs/
+Contains mathematical foundations,
+proof techniques,
+problem-solving frameworks.
 
 ---
 
-## 📂 Repository Structure
+algorithms/
 
-```
-dsa/
-│── fundamentals/
-│   ├── sorting/
-│   ├── searching/
-│
-│── data_structures/
-│   ├── arrays/
-│   ├── strings/
-│   ├── hashmaps/
-│   ├── linked_lists/
-│   ├── stacks_queues/
-│   ├── trees/
-│   ├── graphs/
-│
-│── algorithms/
-│   ├── dfs/
-│   ├── bfs/
-│   ├── recursion/
-│
-│── patterns/
-│   ├── sliding_window/
-│   ├── two_pointers/
-│   ├── binary_search/
-│   ├── backtracking/
-│   ├── dynamic_programming/
-│   ├── greedy/
-│
-│── problems/
-│── notes/
-│── templates/
-```
+Algorithm implementations.
 
 ---
 
-## 📝 Problem Format
+patterns/
 
-Each problem includes:
-
-* Problem description
-* Approach / intuition
-* Time & space complexity
-* Clean implementation
+Common interview patterns.
 
 ---
 
-### 📌 Example
+problems/
 
-**Problem:** Two Sum
+## Progress Tracker
+Arrays
 
-**Approach:**
-Use a hash map to store visited numbers and their indices.
+████████░░ 80%
 
-**Time Complexity:** O(n)
-**Space Complexity:** O(n)
+Graphs
 
-```python
-def two_sum(nums, target):
-    seen = {}
-    for i, num in enumerate(nums):
-        if target - num in seen:
-            return [seen[target - num], i]
-        seen[num] = i
-```
+██░░░░░░░░ 20%
 
----
+DP
 
-## 🧪 Practice Strategy
+░░░░░░░░░░ 0%
 
-* Solve problems daily
-* Focus on understanding patterns
-* Revisit difficult problems
-* Optimize solutions after solving
+## Current Focus
+Recursion
 
----
+Binary Search
 
-## 📊 Progress Tracking
+Loop Invariants
 
-| Topic   | Problems Solved |
-| ------- | --------------- |
-| Arrays  |                 |
-| Strings |                 |
-| Trees   |                 |
-| Graphs  |                 |
-| DP      |                 |
+## Contact
 
----
+* Email: ndowahmarcel@gmail.com
 
-## 🧠 Key Learnings
+* GitHub: 
 
-* Breaking problems into smaller parts
-* Identifying patterns quickly
-* Writing clean and efficient code
-* Analyzing time and space complexity
-
----
-
-## 🚀 Goal
-
-To become highly proficient in algorithmic problem solving and confidently handle coding interviews at top tech companies.
-
----
-
-## 🔗 Notes
-
-Additional notes and explanations are available in the `/notes` directory.
-
----
-
+* LinkedIn: 
