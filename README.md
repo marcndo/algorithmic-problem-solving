@@ -44,7 +44,7 @@ problems/
 ### Algorithms/
 
 Sort
-<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
+<span style="color:green">░░░░░░░░</span><span style="color:lightgray">░░</span> 0%
 
 Search
 <span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
