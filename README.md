@@ -42,7 +42,8 @@ problems/
 ## Progress Tracker
 Arrays
 
-<span style="color:green">████████</span><span style="color:lightgray">░░</span>
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 80%
+
 Graphs
 
 ██░░░░░░░░ 20%
