@@ -42,8 +42,7 @@ problems/
 ## Progress Tracker
 Arrays
 
-![Arrays](https://img.shields.io/badge/Arrays-70%25-brightgreen)
-
+<span style="color:green">████████</span><span style="color:lightgray">░░</span>
 Graphs
 
 ██░░░░░░░░ 20%
