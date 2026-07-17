@@ -106,7 +106,7 @@ Bit Manipulation
 
 
 ## Current Focus
-Algorithms
+* Algorithms
 
 ## Contact
 
