@@ -1,7 +1,7 @@
 # Data Structures & Algorithms Practice
 This repository documents my journey toward becoming a software engineer(Machine Learning) capable of solving unfamiliar algorithmic problems through reasoning rather than memorization.
 
-## 🎯 Objective
+## Objective
 
 * Learn algorithms from first principles
 
@@ -15,9 +15,9 @@ This repository documents my journey toward becoming a software engineer(Machine
 
 * Contribute to open source
 
----
 
 ## Learning Philosophy
+
 Every problem follows the same reasoning framework.
 
 ## Repository Structure
@@ -27,26 +27,22 @@ Contains mathematical foundations,
 proof techniques,
 problem-solving frameworks.
 
----
 
 algorithms/
 
 Algorithm implementations.
 
----
-
 patterns/
 
 Common interview patterns.
 
----
 
 problems/
 
 ## Progress Tracker
 Arrays
 
-████████░░ 80%
+![Arrays](https://img.shields.io/badge/Arrays-70%25-brightgreen)
 
 Graphs
 
