@@ -40,29 +40,83 @@ Common interview patterns.
 problems/
 
 ## Progress Tracker
-Arrays
 
-<span style="color:green">████████</span><span style="color:lightgray">░░</span> 80%
+### Algorithms/
+
+Sort
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
+
+Search
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
+
+Recursion
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
+
+
+### Algorithm design techniues
+
+Backtracking
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
+
+Branch and Bound
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
+
+Divid and Conquer
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
+
+Dynamic programming
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
+
+Greedy algorithm
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
+
+Recursion
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
+
+
+### Data Structures
+
+Arrays
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
+
+Hash Tables
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
+
+LinkedLinst
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
+
+Stacks_Queues
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
+
+Heap/Priority Queue
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
 
 Graphs
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
 
-██░░░░░░░░ 20%
+Tries
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
 
-DP
+Interval
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
 
-░░░░░░░░░░ 0%
+
+Math & Geometry
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
+
+
+Bit Manipulation
+<span style="color:green">████████</span><span style="color:lightgray">░░</span> 0%
+
+
 
 ## Current Focus
-Recursion
-
-Binary Search
-
-Loop Invariants
+Algorithms
 
 ## Contact
 
 * Email: ndowahmarcel@gmail.com
 
-* GitHub: 
+* [GitHub](https://github.com/marcndo)
 
-* LinkedIn: 
+* [LinkedIn](https://www.linkedin.com/in/marcelndowah/)
