@@ -98,10 +98,9 @@ T(n) = c<sub>1</sub>(n − 1) + c<sub>2</sub>(n − 1) + c<sub>3</sub>(n − 1) 
 This occurs when the array is already sorted, thus no shifting of elements takes place. This means that c<sub>5</sub>=c<sub>6</sub>=0.
 We now have that,
 
-$$
-T(n)=\left(c_1+c_2+c_3+c_4+c_7\right)n
--\left(c_1+c_2+c_3+c_4+c_7\right)
-$$
+T(n) = (c<sub>1</sub> + c<sub>2</sub> + c<sub>3</sub> + c<sub>4</sub> + c<sub>7</sub>)n
+− (c<sub>1</sub> + c<sub>2</sub> + c<sub>3</sub> + c<sub>4</sub> + c<sub>7</sub>)
+
 In this case T(n) is a linear function of the form an + b. With time complexity of o(n).
 
 #### Worse case analysis
