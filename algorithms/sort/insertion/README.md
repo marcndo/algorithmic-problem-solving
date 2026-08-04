@@ -1,28 +1,12 @@
 # Insertion sort
 
 ## How it works
-We would use a 1-indexed based array for this analysis. The array has positions 1 through n and the j-th element has j-1-th elelment to the left
-Consider the example A = <5, 6, 3, 1, 0>
-* We start with the assumptions that the first element 5 is already sorted thus we divide the array into two, the sorted half(the left of |) and the unsorted half(the right of |) as below
-A = <5,| 6, 3, 1, 0>
-* We pick the first element from the right half(key) and insert in the correct position to the left half. 
-A = <5, 6,| 3, 1, 0>
-A[:2] is now sorted
-* We repeat this process till the entire array is sorted, as below
-
-           key                         key
-            |                           |
-A = <5, 6,| 3, 1, 0> --> A = <3, 5, 6,| 1, 0> --> 
-
-                 key
-                  |
-A = <1, 3, 5, 6,|,0> --> A = <0, 1, 3, 5, 6> 
-
-* NB The point of insertion is determine by comparing the key with the elements in the sorted half. If the key is smaller than the current compared element, we shift the current element to the right. Repeated shifting is made until the correct insertion point is found.
+We would use a 1-indexed based array for this analysis. 
+Insertion sort works by considering the array as two separate regions. The left region is considered sorted while the right region is unsorted. Initially, the left region is simply the first element in the array which is trivially sorted as the only element. We repeatedly pick an element from the right region and insert it in the correct position in the left region until the entire array is sorted.
 
 ## Why it works
 
-See the proof in proof.md(same directory)
+[See proof](proof.md)
 
 ## Time and Space complexity
 
