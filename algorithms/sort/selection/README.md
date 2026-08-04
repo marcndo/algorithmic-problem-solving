@@ -1,7 +1,7 @@
 # Selection Sort
 
 ## How it works.
-The idea is to sort an array, we pick the first smallest element and insert in postion 1, then pick the second smallest element and insert in position 2, then proceed to the third, fouth till the last element.
+The idea is to sort an array by repeatedly finding the smallest element and swapping into it's correct position. That is we find the ovarall smallest element and swap with 0, then the next smallest element in the remaining section of the array and swap with 1, then continue till the full array is eventually sorted.
 
 ## Why in works
 [see proof](proof.md)
