@@ -85,7 +85,9 @@ We now have that,
 T(n) = (c<sub>1</sub> + c<sub>2</sub> + c<sub>3</sub> + c<sub>4</sub> + c<sub>7</sub>)n
 − (c<sub>1</sub> + c<sub>2</sub> + c<sub>3</sub> + c<sub>4</sub> + c<sub>7</sub>)
 
-In this case T(n) is a linear function of the form an + b. With time complexity of o(n).
+In this case T(n) is a linear function of the form an - b. With time complexity of o(n). Where 
+a = (c<sub>1</sub> + c<sub>2</sub> + c<sub>3</sub> + c<sub>4</sub> + c<sub>7</sub>).
+b =  (c<sub>1</sub> + c<sub>2</sub> + c<sub>3</sub> + c<sub>4</sub> + c<sub>7</sub>).
 
 #### Worse case analysis
 
@@ -108,7 +110,11 @@ T(n) = c<sub>1</sub>(n − 1) + c<sub>2</sub>(n − 1) + c<sub>3</sub>(n − 1) 
 
 Therefore, 
 
-T(n) = an<sup>2</sup> + bn + c, which is a quadratic function with time complexity O(n^2).
+T(n) = an<sup>2</sup> + bn - c, which is a quadratic function with time complexity O(n^2), where 
+a =  c<sub>1</sub>(n − 1) + c<sub>2</sub>(n − 1) + c<sub>3</sub>(n − 1) + c<sub>4</sub>(n(n + 1)/2 − 1) + c<sub>5</sub>(n(n − 1)/2) + c<sub>6</sub>(n(n − 1)/2) + c<sub>7</sub>(n − 1) =
+((c<sub>4</sub> + c<sub>5</sub> + c<sub>6</sub>)/2).
+b = (c<sub>1</sub> + c<sub>2</sub> + c<sub>3</sub> + c<sub>4</sub>/2 − c<sub>5</sub>/2 − c<sub>6</sub>/2 + c<sub>7</sub>).
+c = (c<sub>1</sub> + c<sub>2</sub> + c<sub>3</sub> + c<sub>4</sub> + c<sub>7</sub>).
 
 
 
