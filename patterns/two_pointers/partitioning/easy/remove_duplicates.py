@@ -1,14 +1,24 @@
-"Leetcode 26: Remove duplicates"
-
 def remove_duplicates(nums):
-    j = 1
-    for i in range(1,len(nums)):
-        if nums[j-1] != nums[i]:
-            nums[j] = nums[i]
-            j += 1
-    return j
-  
+    result = []
+    duplicates = []
+    seen = set()
+    for val in nums:
+        if val in seen:
+            duplicates.append(val)
+        else:
+            result.append(val)
+            seen.add(val)
+    result.extend(duplicates)
+    return len(seen)
 
-nums = [1,1,1,2,2,3]
-print(remove_duplicates(nums))
 
+def optimal(nums):
+    n = len(nums)
+    if n == 0:
+        return 0
+    slow = 0
+    for fast in range(1, n):
+        if nums[slow] != nums[fast]:
+            slow += 1
+            nums[slow] = nums[fast]
+    return slow + 1
