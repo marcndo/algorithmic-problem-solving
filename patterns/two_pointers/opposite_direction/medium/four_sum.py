@@ -1,8 +1,27 @@
-"18.4Sum"
 
-nums = [1,0,-1,0,-2,2]
-target = 0
 def four_sum(nums, target):
+    result = []
+    nums.sort()
+    n = len(nums)
+    for i in range(n-3):
+        if i > 0 and nums[i] == nums[i-1]:
+            continue
+        for j in range(i+1, n-2):
+            if j > i+1 and nums[j] == nums[j-1]:
+                continue
+            for k in range(j+1, n-1):
+                if k > j+1 and nums[k] == nums[k-1]:
+                    continue
+
+                for l in range(k+1, n):
+                    if l > k + 1 and nums[l] == nums[l-1]:
+                        continue
+                    if nums[i] + nums[j] + nums[k] + nums[l]== target:
+                        result.append([nums[i],nums[j],nums[k], nums[l]])
+    return result
+
+
+def optimal(nums, target):
     nums.sort()
     result = []
     n = len(nums)
@@ -40,4 +59,3 @@ def four_sum(nums, target):
                     right -= 1
     return result
 
-print(four_sum(nums, target))
