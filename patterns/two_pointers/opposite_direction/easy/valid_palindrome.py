@@ -40,6 +40,10 @@ def opt(s):
     return True
 
 
-s = "Was it a car or a cat I saw?"
-print(is_valid_palindrom(s))
-print(optimal(s))
+assert optimal("A man, a plan, a canal: Panama") is True
+assert optimal("race a car") is False
+assert optimal("") is True
+assert optimal(".,") is True
+assert optimal(" ") is True
+assert optimal("0P") is False
+
